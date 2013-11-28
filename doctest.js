@@ -1167,6 +1167,7 @@ HTMLParser.prototype = {
   },
 
   parseCommentEl: function (el) {
+    // TODO: implement print(), wait() and Spy() as valid calls in comments
     if (typeof esprima == "undefined") {
       if (typeof require != "undefined") {
         esprima = require("./esprima/esprima.js");
